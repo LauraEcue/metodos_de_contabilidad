@@ -6,9 +6,9 @@ matriz = [
     [1, 1, 1]
 ]
 
-i = 0  # Fila
+i = 0                # Fila
 while i < len(matriz):
-    j = 0  # Columna
+    j = 0            # Columna
     while j < len(matriz[i]):
          #   print(matriz[i][j])
             j += 1
@@ -49,11 +49,15 @@ matriz = [
 ]
 i = 4  # Fila
 while i < len(matriz):
-    j = 4  # Columna
+    j = 2  # Columna
     while j < len(matriz[i]):
             print(matriz[i][j])
             j += 1
     i += 1
+
+
+
+
 
 #inicializacion - for
 
