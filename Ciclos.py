@@ -1,7 +1,9 @@
 matriz = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
+    [5, 4, 3],
+    [2, 1, 0],
+    [4, 5, 5],
+    [3, 2, 2],
+    [1, 1, 1]
 ]
 
 # Inicialización de índices - while
@@ -12,6 +14,26 @@ while i < len(matriz):
             print(matriz[i][j])
             j += 1
     i += 1
+print ("======================================================")
+
+matriz = [
+    [5, 4, 3],
+    [2, 1, 0],
+    [4, 5, 5],
+    [3, 2, 2],
+    [1, 1, 1]
+]
+
+filas = len(matriz) #i
+columnas = len(matriz[0]) #j
+
+j = 0
+while j < columnas:
+    i = 0
+    while i < filas:
+        print(matriz[i][j])
+        i += 1
+    j += 1    
 
 print("###################################################")
 
