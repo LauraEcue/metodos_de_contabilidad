@@ -10,10 +10,10 @@ i = 0                # Fila
 while i < len(matriz):
     j = 0            # Columna
     while j < len(matriz[i]):
-         #   print(matriz[i][j])
+            print(matriz[i][j])
             j += 1
     i += 1
-#print ("======================================================")
+print ("======================================================")
 
 #inicialización de columnas y luego filas
 
@@ -32,11 +32,11 @@ j = 0
 while j < columnas:
     i = 0
     while i < filas:
-        #print(matriz[i][j])
+        print(matriz[i][j])
         i += 1
     j += 1    
 
-#print("###################################################")
+print("###################################################")
 
 #inicializacion de filas y columnas, de final al inicio
 
@@ -47,15 +47,38 @@ matriz = [
     [3, 2, 2],
     [1, 1, 1]
 ]
-i = 4  # Fila
-while i < len(matriz):
-    j = 2  # Columna
-    while j < len(matriz[i]):
-            print(matriz[i][j])
-            j += 1
-    i += 1
+filas = len(matriz) #i
+columnas = len(matriz[0]) #j
 
+j = filas-1
+while j >= 0:
+    i = columnas-1
+    while i >= 0:
+        print(matriz[j][i])
+        i -= 1
+    j -= 1 
 
+print("==============================================================")
+#inicializacion de while de columnas desde arriba hacia abajo
+
+matriz = [
+    [5, 4, 3],
+    [2, 1, 0],
+    [4, 5, 5],
+    [3, 2, 2],
+    [1, 1, 1]
+]
+
+filas = len(matriz) #i
+columnas = len(matriz[0]) #j
+
+j = columnas -1
+while j >= 0:
+    i = filas -1
+    while i >= 0 :
+        print(matriz[i][j])
+        i -= 1
+    j -= 1   
 
 
 
