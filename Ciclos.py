@@ -50,16 +50,16 @@ matriz = [
 filas = len(matriz) #i
 columnas = len(matriz[0]) #j
 
-j = filas-1
-while j >= 0:
-    i = columnas-1
-    while i >= 0:
-        print(matriz[j][i])
-        i -= 1
-    j -= 1 
+i = filas-1
+while i >= 0:
+    j = columnas-1
+    while j >= 0:
+        print(matriz[i][j])
+        j -= 1
+    i -= 1 
 
 print("==============================================================")
-#inicializacion de while de columnas desde arriba hacia abajo
+#inicializacion de while de columnas desde abajo hacia arria 
 
 matriz = [
     [5, 4, 3],
