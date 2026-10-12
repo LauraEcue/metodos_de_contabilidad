@@ -38,7 +38,7 @@ while j < columnas:
 
 print("###################################################")
 
-#inicializacion de filas y columnas, de final al inicio
+#inicializacion de filas y columnas, de final al inicio (derecha a izquierda)
 
 matriz = [
     [5, 4, 3],
