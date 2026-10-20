@@ -24,6 +24,10 @@ class ListaEnlazada:
             print(actual.dato, end=" -> ")
             actual = actual.siguiente
 
+
+        actual.siguiente = nuevo
+        
+
         print("None")
 
 
@@ -34,11 +38,11 @@ Lista1 = ListaEnlazada()
 Lista1.insertar_inicio(10)
 Lista1.insertar_inicio(15)
 Lista1.insertar_inicio(6)
-print(Lista1.cabeza.dato)  # Imprime 97
-print(Lista1.cabeza.siguiente.dato)  # Imprime 77
-print(Lista1.cabeza.siguiente.siguiente.dato)  # Imprime 10
+print(Lista1.cabeza.dato)  # Imprime 10
+print(Lista1.cabeza.siguiente.dato)  # Imprime 15
+print(Lista1.cabeza.siguiente.siguiente.dato)  # Imprime 6
 
-
+Lista1.mostrar()
 
 
 
