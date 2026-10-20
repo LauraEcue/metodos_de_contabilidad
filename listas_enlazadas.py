@@ -1,26 +1,42 @@
 class Nodo:
-    def __init__ (self,data):
-        self.data = data
-        self.Next = None
+    def __init__(self, dato):
+        self.dato = dato
+        self.siguiente = None
 
-class LE:
+
+class ListaEnlazada:
     def __init__(self):
-        self.head = None
+        self.cabeza = None
+
+    def insertar_inicio(self, dato):
+        nuevo = Nodo(dato)
+        nuevo.siguiente = self.cabeza
+        self.cabeza = nuevo
+
+    def mostrar(self):
+        actual = self.cabeza
+
+        if actual is None:
+            print("La lista esta vacia.")
+            return
+
+        while actual is not None:
+            print(actual.dato, end=" -> ")
+            actual = actual.siguiente
+
+        print("None")
 
 
-    def Adicionar (self, data):
-        Nuevo = Nodo(data)
-        Nuevo.Next = self.head
-        self.head = None
 
-L = LE ()
+Lista1 = ListaEnlazada()
 
 
-L.Adicionar(10)
-L.Adicionar(20)
-
-L.Adicionar(30)
-print(L.head.data)
+Lista1.insertar_inicio(10)
+Lista1.insertar_inicio(15)
+Lista1.insertar_inicio(6)
+print(Lista1.cabeza.dato)  # Imprime 97
+print(Lista1.cabeza.siguiente.dato)  # Imprime 77
+print(Lista1.cabeza.siguiente.siguiente.dato)  # Imprime 10
 
 
 
